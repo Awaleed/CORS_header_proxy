@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.post("/", (req, res) => {
+app.post("/api", (req, res) => {
   // return res.send();
   const url = new URL(req.body['url']);
   request = new fetch.Request(url);

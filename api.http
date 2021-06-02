@@ -1,3 +1,2 @@
-POST https://shielded-brook-37417.herokuapp.com/api HTTP/1.1
+GET http://localhost:8080/?url=https://sehoool.com/images/161929566869271.jpg HTTP/1.1
 
-# {"url": "https://sehoool.com/images/161929566869271.jpg"}

@@ -4,9 +4,9 @@ const fetch = require("node-fetch");
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   // return res.send();
-  const url = new URL(req.query['url']);
+  const url = new URL(req.body['url']);
   request = new fetch.Request(url);
   request.headers.set("Origin", new URL(url).origin);
   fetch(request)

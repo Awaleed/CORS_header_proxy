@@ -1,2 +1,2 @@
-GET http://localhost:8080/?url=https://sehoool.com/images/161929566869271.jpg HTTP/1.1
+GET https://shielded-brook-37417.herokuapp.com/?url=https://sehoool.com/images/161929566869271.jpg HTTP/1.1
 

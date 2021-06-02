@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   fetch(request)
     .then(async (response) => {
       let buffer = await response.buffer();
-      res.set("Access-Control-Allow-Origin", url.origin);
+      res.set("Access-Control-Allow-Origin", '*');
       res.set("Vary", "Origin");
       res.set("content-type", response.headers['content-type'])
       res.send(buffer);
